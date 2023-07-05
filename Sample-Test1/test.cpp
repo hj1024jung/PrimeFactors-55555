@@ -6,16 +6,21 @@ TEST(TestSuiteBase, AlwaysPass)
 	EXPECT_EQ(1, 1);
 }
 
-TEST(TC_Prime, Of1)
+class PrimeFixture : public testing::Test
 {
+public:
 	PrimeFactor prime_factor;
-	vector<int> expected = {};
+	vector<int> expected;
+};
+
+TEST_F(PrimeFixture, Of1)
+{
+	expected = {};
 	EXPECT_EQ(expected, prime_factor.of(1));
 }
 
-TEST(TC_Prime, Of2)
+TEST_F(PrimeFixture, Of2)
 {
-	PrimeFactor prime_factor;
-	vector<int> expected = {2};
+	expected = {2};
 	EXPECT_EQ(expected, prime_factor.of(2));
 }
