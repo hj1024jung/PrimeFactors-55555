@@ -1,3 +1,3 @@
 ## Content
 ---
-prime factor kata.
+Prime Factor TDD KATA.
