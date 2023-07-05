@@ -6,8 +6,9 @@ TEST(TestSuiteBase, AlwaysPass)
 	EXPECT_EQ(1, 1);
 }
 
-TEST(TC_Prime, p1)
+TEST(TC_Prime, Of1)
 {
-	PrimeFactor p;
-	EXPECT_EQ(1, 1);
+	PrimeFactor prime_factor;
+	vector<int> expected = {};
+	EXPECT_EQ(expected, prime_factor.of(1));
 }
