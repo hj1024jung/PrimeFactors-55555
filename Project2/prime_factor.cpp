@@ -5,17 +5,13 @@ using namespace std;
 class PrimeFactor
 {
 public:
-	vector<int> of(int i)
+	vector<int> of(int number)
 	{
 		vector<int> result = {};
 
-		if (i == 2)
+		if (1 < number)
 		{
-			result.push_back(2);
-		}
-		if (i == 3)
-		{
-			result.push_back(3);
+			result.push_back(number);
 		}
 
 		return result;
